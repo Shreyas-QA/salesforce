@@ -28,7 +28,7 @@ public class BaseTest {
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browserName.equalsIgnoreCase("firefox")) {
 			// create firefox instance
-			System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "D:\\Driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		// Check if parameter passed as 'chrome'
