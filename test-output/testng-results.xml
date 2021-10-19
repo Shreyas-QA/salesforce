@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24515" started-at="2021-10-19T10:11:42Z" finished-at="2021-10-19T10:12:07Z">
+    <groups>
+    </groups>
+    <test name="SalesForce" duration-ms="24515" started-at="2021-10-19T10:11:42Z" finished-at="2021-10-19T10:12:07Z">
+      <class name="salesforce_Tests.HomeTest">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:salesforce_Tests.HomeTest@77caeb3e]" name="initialize" is-config="true" duration-ms="23349" started-at="2021-10-19T15:41:42Z" finished-at="2021-10-19T15:42:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="ViewMenu()[pri:0, instance:salesforce_Tests.HomeTest@77caeb3e]" name="ViewMenu" duration-ms="1149" started-at="2021-10-19T15:42:06Z" finished-at="2021-10-19T15:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewMenu -->
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:salesforce_Tests.HomeTest@77caeb3e]" name="TeardownTest" is-config="true" duration-ms="1430" started-at="2021-10-19T15:42:07Z" finished-at="2021-10-19T15:42:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeardownTest -->
+      </class> <!-- salesforce_Tests.HomeTest -->
+    </test> <!-- SalesForce -->
+  </suite> <!-- Suite -->
+</testng-results>
