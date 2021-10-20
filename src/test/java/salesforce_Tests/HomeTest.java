@@ -15,7 +15,7 @@ public class HomeTest extends BaseTest {
 		HomePage hpage = PageFactory.initElements(driver, HomePage.class);
 
 		hpage.ClickProductTab();
-
+		hpage.ClickResourceTab();
 	}
 
 }

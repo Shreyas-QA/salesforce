@@ -17,7 +17,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 public class EmailResult {
-	final static String username = "qaqtech365@gmail.com";
+	final static String username = "";
 	final static String password = "QaQtech@365";
 
 	public static void sendEmail() {
@@ -27,12 +27,6 @@ public class EmailResult {
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.port", "587");
 
-//		Properties props = new Properties();
-//		props.put("mail.smtp.starttls.enable", "true");
-//		props.put("mail.smtp.auth", "true"); // If you need to authenticate
-//		props.put("mail.smtp.host", host);
-//		props.put("mail.smtp.port", "587");
-//		props.put("mail.smtp.starttls.enable", "true");
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(username, password);
@@ -43,7 +37,7 @@ public class EmailResult {
 
 			Message message = new MimeMessage(session);
 			// message.setFrom(new InternetAddress("from.mail.id91@gmail.com"));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("shreyas.sambare@qtech365.in"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(""));
 			// message.setRecipients(Message.RecipientType.TO,
 			// InternetAddress.parse("qaqtech365@gmail.com"));
 			message.setSubject("Testing Subject");
