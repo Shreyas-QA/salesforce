@@ -4,7 +4,7 @@
 
 	<test thread-count="1" name="SalesForce">
 		<!-- <parameter name="browser" value="firefox" /> -->
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="${BROWSER}" />
 		<classes>
 			<class name="salesforce_Tests.HomeTest" />
 		</classes>
