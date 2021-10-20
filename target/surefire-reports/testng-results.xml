@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="82233" started-at="2021-10-20T12:33:51Z" finished-at="2021-10-20T12:35:14Z">
+  <suite name="Suite" duration-ms="110471" started-at="2021-10-20T12:47:22Z" finished-at="2021-10-20T12:49:12Z">
     <groups>
     </groups>
-    <test name="SalesForce" duration-ms="82233" started-at="2021-10-20T12:33:51Z" finished-at="2021-10-20T12:35:14Z">
+    <test name="SalesForce" duration-ms="110471" started-at="2021-10-20T12:47:22Z" finished-at="2021-10-20T12:49:12Z">
       <class name="salesforce_Tests.HomeTest">
-        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:salesforce_Tests.HomeTest@2d3fcdbd]" name="initialize" is-config="true" duration-ms="75996" started-at="2021-10-20T18:03:51Z" finished-at="2021-10-20T18:05:07Z">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:salesforce_Tests.HomeTest@2d3fcdbd]" name="initialize" is-config="true" duration-ms="106146" started-at="2021-10-20T18:17:22Z" finished-at="2021-10-20T18:19:08Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="ViewMenu()[pri:0, instance:salesforce_Tests.HomeTest@2d3fcdbd]" name="ViewMenu" duration-ms="6153" started-at="2021-10-20T18:05:08Z" finished-at="2021-10-20T18:05:14Z">
+        <test-method status="PASS" signature="ViewMenu()[pri:0, instance:salesforce_Tests.HomeTest@2d3fcdbd]" name="ViewMenu" duration-ms="4258" started-at="2021-10-20T18:19:08Z" finished-at="2021-10-20T18:19:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ViewMenu -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:salesforce_Tests.HomeTest@2d3fcdbd]" name="TeardownTest" is-config="true" duration-ms="4490" started-at="2021-10-20T18:05:14Z" finished-at="2021-10-20T18:05:18Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:salesforce_Tests.HomeTest@2d3fcdbd]" name="TeardownTest" is-config="true" duration-ms="6323" started-at="2021-10-20T18:19:13Z" finished-at="2021-10-20T18:19:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
