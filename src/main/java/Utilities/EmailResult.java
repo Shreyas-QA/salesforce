@@ -17,8 +17,8 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 public class EmailResult {
-	final static String username = "";
-	final static String password = "QaQtech@365";
+	final static String username = System.getenv("USER_EMAIL");
+	final static String password = System.getenv("Password");
 
 	public static void sendEmail() {
 		Properties props = new Properties();
