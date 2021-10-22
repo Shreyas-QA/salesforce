@@ -17,6 +17,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.collections.Lists;
 
+import Utilities.EmailResult;
+
 public class BaseTest {
 
 	public WebDriver driver;
@@ -24,7 +26,7 @@ public class BaseTest {
 	@Parameters({ "browser" }) // chrome
 	@BeforeClass
 	public void initialize(String browserName) throws Exception {
-		
+
 		System.out.println(browserName);
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browserName.equalsIgnoreCase("firefox")) {
@@ -58,7 +60,7 @@ public class BaseTest {
 	@AfterSuite
 	// Test cleanup
 	public void TeardownTest() {
-
+		EmailResult.sendEmail();
 		driver.quit();
 	}
 
