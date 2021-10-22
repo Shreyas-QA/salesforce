@@ -24,7 +24,8 @@ public class BaseTest {
 	@Parameters({ "browser" }) // chrome
 	@BeforeClass
 	public void initialize(String browserName) throws Exception {
-
+		
+		System.out.println(browserName);
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browserName.equalsIgnoreCase("firefox")) {
 			// create firefox instance

@@ -3,8 +3,8 @@
 <suite thread-count="1" name="Suite" preserve-order="true">
 
 	<test thread-count="1" name="SalesForce">
-		<!-- <parameter name="browser" value="firefox" /> -->
-		<parameter name="browser" value="${BROWSER}" />
+	<!-- 	<parameter name="browser" value="${BROWSER}" /> -->
+		<parameter name="browser" value="$browser" />
 		<classes>
 			<class name="salesforce_Tests.HomeTest" />
 		</classes>
