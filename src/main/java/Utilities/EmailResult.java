@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMultipart;
 public class EmailResult {
 	final static String username = System.getenv("USER_EMAIL");
 	final static String password = System.getenv("Password");
-
+	
 	public static void sendEmail() {
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", true);
@@ -37,7 +37,7 @@ public class EmailResult {
 
 			Message message = new MimeMessage(session);
 			// message.setFrom(new InternetAddress("from.mail.id91@gmail.com"));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(""));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("shreyas.sambare@qtech365.in"));
 			// message.setRecipients(Message.RecipientType.TO,
 			// InternetAddress.parse("qaqtech365@gmail.com"));
 			message.setSubject("Testing Subject");
