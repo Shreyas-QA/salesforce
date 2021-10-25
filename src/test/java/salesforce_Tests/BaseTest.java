@@ -60,7 +60,7 @@ public class BaseTest {
 	@AfterSuite
 	// Test cleanup
 	public void TeardownTest() {
-		//EmailResult.sendEmail();
+		EmailResult.sendEmail();
 		driver.quit();
 	}
 
