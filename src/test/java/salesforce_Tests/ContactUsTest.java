@@ -18,11 +18,9 @@ public class ContactUsTest extends BaseTest {
 
 	@Test(priority = 2)
 	public void GoToContactUsPage() {
-		
+
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(1));
-		
-
 	}
-	
+
 }

@@ -45,7 +45,7 @@ public class BaseTest {
 			ChromeOptions options = new ChromeOptions();
 			options.setHeadless(Appconfig.isHeadless());
 			System.out.println(Appconfig.isHeadless());
-			System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", Appconfig.getChromePath());
 			// create chrome instance
 			driver = new ChromeDriver(options);
 			Dimension d = new Dimension(1920, 1080);
