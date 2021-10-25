@@ -8,7 +8,8 @@ public class ContactUs_Pages {
 
 	WebDriver driver;
 
-	private ContactUs_Pages(WebDriver driver) {
+	public ContactUs_Pages(WebDriver driver) {
+		System.out.println("Page: "+driver);
 		this.driver = driver;
 	}
 
@@ -16,7 +17,7 @@ public class ContactUs_Pages {
 	public WebElement clickContactUs;
 
 	public void ClickOnContactUs() {
-	System.out.println();
+
 		clickContactUs.click();
 	}
 	

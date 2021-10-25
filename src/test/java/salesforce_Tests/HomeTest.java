@@ -12,7 +12,7 @@ public class HomeTest extends BaseTest {
 	@Test
 	public void ViewMenu() {
 
-		HomePage hpage = PageFactory.initElements(driver, HomePage.class);
+		hpage = PageFactory.initElements(driver, HomePage.class);
 
 		hpage.ClickProductTab();
 		hpage.ClickResourceTab();

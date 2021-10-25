@@ -21,7 +21,7 @@ import Utilities.EmailResult;
 
 public class BaseTest {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	@Parameters({ "browser" }) // chrome
 	@BeforeSuite
@@ -60,7 +60,7 @@ public class BaseTest {
 	@AfterSuite
 	// Test cleanup
 	public void TeardownTest() {
-		EmailResult.sendEmail();
+		//EmailResult.sendEmail();
 		driver.quit();
 	}
 
