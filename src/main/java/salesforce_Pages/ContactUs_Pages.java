@@ -16,7 +16,9 @@ public class ContactUs_Pages {
 	public WebElement clickContactUs;
 
 	public void ClickOnContactUs() {
+	System.out.println();
 		clickContactUs.click();
 	}
+	
 
 }
