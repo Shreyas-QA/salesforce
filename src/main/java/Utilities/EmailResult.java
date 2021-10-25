@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMultipart;
 public class EmailResult {
 	final static String username = System.getenv("USER_EMAIL");
 	final static String password = System.getenv("Password");
-	
+
 	public static void sendEmail() {
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", true);
@@ -29,8 +29,7 @@ public class EmailResult {
 
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				System.out.println(username);
-				System.out.println(password);
+
 				return new PasswordAuthentication(username, password);
 			}
 		});
