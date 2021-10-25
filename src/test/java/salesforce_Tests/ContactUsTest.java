@@ -1,5 +1,7 @@
 package salesforce_Tests;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import salesforce_Pages.ContactUs_Pages;
@@ -13,9 +15,11 @@ public class ContactUsTest extends BaseTest {
 		cpage = PageFactory.initElements(driver, ContactUs_Pages.class);
 		cpage.ClickOnContactUs();
 	}
-	
+
 	@Test
 	public void GoToContactUsPage() {
-		
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		driver.getTitle();
 	}
 }
