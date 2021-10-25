@@ -15,9 +15,9 @@ import org.testng.Assert;
 public class HomePage {
 
 	@FindBy(xpath = "(//button[@class='nav-item-link child-menu'])[1]")
-	public WebElement ProductsTab;
+	private WebElement ProductsTab;
 	@FindBy(xpath = "(//button[@class = 'nav-item-link child-menu'])[2]")
-	public WebElement ResourceTab;
+	private WebElement ResourceTab;
 
 	WebDriver driver;
 

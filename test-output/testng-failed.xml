@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]">
+  <parameter name="browser" value="$browser"/>
+  <test name="SalesForce(failed)">
+    <parameter name="browser" value="$browser"/>
+    <classes>
+      <class name="salesforce_Tests.ContactUsTest">
+        <methods>
+          <include name="ViewMenu"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- salesforce_Tests.ContactUsTest -->
+    </classes>
+  </test> <!-- SalesForce(failed) -->
+</suite> <!-- Failed suite [Suite] -->

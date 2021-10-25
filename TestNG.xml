@@ -6,7 +6,8 @@
 	<!-- 	<parameter name="browser" value="${BROWSER}" /> -->
 		<parameter name="browser" value="$browser" />
 		<classes>
-			<class name="salesforce_Tests.HomeTest" />
+		<!-- 	<class name="salesforce_Tests.HomeTest" />-->
+			<class name="salesforce_Tests.ContactUsTest" />
 		</classes>
 	</test>
 </suite> <!-- Suite -->	

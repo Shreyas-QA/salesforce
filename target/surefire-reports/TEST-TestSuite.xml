@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestSuite" time="2.085" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="TestSuite" time="0.932" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -64,5 +64,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="salesforce_Tests.HomeTest" name="ViewMenu" time="2.085"/>
+  <testcase classname="salesforce_Tests.ContactUsTest" name="ViewMenu" time="0.008">
+    <failure message="java.lang.InstantiationException: salesforce_Pages.ContactUs_Pages" type="java.lang.RuntimeException">java.lang.RuntimeException: java.lang.InstantiationException: salesforce_Pages.ContactUs_Pages
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at salesforce_Tests.ContactUsTest.ViewMenu(ContactUsTest.java:13)
+Caused by: java.lang.InstantiationException: salesforce_Pages.ContactUs_Pages
+	at java.lang.Class.newInstance(Class.java:427)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
+	... 36 more
+Caused by: java.lang.NoSuchMethodException: salesforce_Pages.ContactUs_Pages.&lt;init&gt;()
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.newInstance(Class.java:412)
+	... 37 more
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5c8da962
+chrome
+</system-out>
+    <system-err>Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 17354
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 25, 2021 12:52:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="salesforce_Tests.HomeTest" name="ViewMenu" time="0.924"/>
 </testsuite>

@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.956 sec
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.601 sec <<< FAILURE!
+ViewMenu(salesforce_Tests.ContactUsTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.RuntimeException: java.lang.InstantiationException: salesforce_Pages.ContactUs_Pages
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at salesforce_Tests.ContactUsTest.ViewMenu(ContactUsTest.java:13)
+Caused by: java.lang.InstantiationException: salesforce_Pages.ContactUs_Pages
+	at java.lang.Class.newInstance(Class.java:427)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
+	... 36 more
+Caused by: java.lang.NoSuchMethodException: salesforce_Pages.ContactUs_Pages.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082)
+	at java.lang.Class.newInstance(Class.java:412)
+	... 37 more
+

@@ -24,7 +24,7 @@ public class BaseTest {
 	public WebDriver driver;
 
 	@Parameters({ "browser" }) // chrome
-	@BeforeClass
+	@BeforeSuite
 	public void initialize(String browserName) throws Exception {
 
 		System.out.println(browserName);
