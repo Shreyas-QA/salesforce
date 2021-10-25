@@ -21,7 +21,8 @@ public class ContactUsTest extends BaseTest {
 		
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(1));
-		driver.getTitle();
+		
 
 	}
+	
 }

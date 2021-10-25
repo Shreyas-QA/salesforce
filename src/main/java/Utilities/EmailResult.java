@@ -50,7 +50,7 @@ public class EmailResult {
 			Multipart multipart = new MimeMultipart();
 
 			messageBodyPart = new MimeBodyPart();
-			String file = "C:\\Users\\shreyas.sambare\\eclipse-workspace\\com.dddframework.project\\test-output\\emailable-report.html";
+			String file = "D:\\Shreyas\\salesforce\\test-output\\emailable-report.html";
 			String fileName = "TestAttachment";
 
 			DataSource source = new FileDataSource(file);

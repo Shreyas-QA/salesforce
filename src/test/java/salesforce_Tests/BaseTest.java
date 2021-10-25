@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,17 +18,21 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.collections.Lists;
 
+import Utilities.Appconfig;
 import Utilities.EmailResult;
 
 public class BaseTest {
 
 	public static WebDriver driver;
+	public Appconfig appconfobj;
 
 	@Parameters({ "browser" }) // chrome
 	@BeforeSuite
 	public void initialize(String browserName) throws Exception {
 
-		System.out.println(browserName);
+		appconfobj = new Appconfig();
+		appconfobj.readConfigSetting();
+
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browserName.equalsIgnoreCase("firefox")) {
 			// create firefox instance
@@ -36,10 +41,16 @@ public class BaseTest {
 		}
 		// Check if parameter passed as 'chrome'
 		else if (browserName.equalsIgnoreCase("chrome")) {
+
+			ChromeOptions options = new ChromeOptions();
+			options.setHeadless(Appconfig.isHeadless());
+			System.out.println(Appconfig.isHeadless());
 			System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
 			// create chrome instance
-			driver = new ChromeDriver();
-
+			driver = new ChromeDriver(options);
+			Dimension d = new Dimension(1920, 1080);
+			// Resize the current window to the given dimension
+			driver.manage().window().setSize(d);
 		}
 		// Check if parameter passed as 'Edge'
 		else if (browserName.equalsIgnoreCase("Edge")) {
@@ -68,7 +79,7 @@ public class BaseTest {
 		TestListenerAdapter tla = new TestListenerAdapter();
 		TestNG testng = new TestNG();
 		List<String> suites = Lists.newArrayList();
-		suites.add("C:\\Users\\shreyas.sambare\\eclipse-workspace\\com.dddframework.project\\testNG.xml");// path to
+		suites.add("D:\\Shreyas\\salesforce\\TestNG.xml");// path to
 		testng.setTestSuites(suites);
 		testng.run();
 	}
