@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="5017" started-at="2021-10-25T08:51:24Z" finished-at="2021-10-25T08:51:29Z">
+  <suite name="Command line suite" duration-ms="10341" started-at="2021-10-25T08:54:48Z" finished-at="2021-10-25T08:54:59Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="5017" started-at="2021-10-25T08:51:24Z" finished-at="2021-10-25T08:51:29Z">
+    <test name="Command line test" duration-ms="10341" started-at="2021-10-25T08:54:48Z" finished-at="2021-10-25T08:54:59Z">
       <class name="salesforce_Tests.HomeTest">
-        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:salesforce_Tests.HomeTest@90f6bfd]" name="initialize" is-config="true" duration-ms="42916" started-at="2021-10-25T14:20:41Z" finished-at="2021-10-25T14:21:24Z">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:salesforce_Tests.HomeTest@90f6bfd]" name="initialize" is-config="true" duration-ms="10178" started-at="2021-10-25T14:24:38Z" finished-at="2021-10-25T14:24:48Z">
           <params>
             <param index="0">
               <value>
@@ -18,21 +18,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="ViewMenu()[pri:0, instance:salesforce_Tests.HomeTest@90f6bfd]" name="ViewMenu" duration-ms="941" started-at="2021-10-25T14:21:24Z" finished-at="2021-10-25T14:21:25Z">
+        <test-method status="PASS" signature="ViewMenu()[pri:0, instance:salesforce_Tests.HomeTest@90f6bfd]" name="ViewMenu" duration-ms="915" started-at="2021-10-25T14:24:48Z" finished-at="2021-10-25T14:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ViewMenu -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:salesforce_Tests.HomeTest@90f6bfd]" name="TeardownTest" is-config="true" duration-ms="1163" started-at="2021-10-25T14:21:29Z" finished-at="2021-10-25T14:21:30Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:salesforce_Tests.HomeTest@90f6bfd]" name="TeardownTest" is-config="true" duration-ms="6333" started-at="2021-10-25T14:24:59Z" finished-at="2021-10-25T14:25:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
       </class> <!-- salesforce_Tests.HomeTest -->
       <class name="salesforce_Tests.ContactUsTest">
-        <test-method status="PASS" signature="ClickOnContactUS_Link()[pri:0, instance:salesforce_Tests.ContactUsTest@36f6e879]" name="ClickOnContactUS_Link" duration-ms="214" started-at="2021-10-25T14:21:25Z" finished-at="2021-10-25T14:21:25Z">
+        <test-method status="PASS" signature="ClickOnContactUS_Link()[pri:0, instance:salesforce_Tests.ContactUsTest@36f6e879]" name="ClickOnContactUS_Link" duration-ms="227" started-at="2021-10-25T14:24:49Z" finished-at="2021-10-25T14:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnContactUS_Link -->
-        <test-method status="PASS" signature="GoToContactUsPage()[pri:0, instance:salesforce_Tests.ContactUsTest@36f6e879]" name="GoToContactUsPage" duration-ms="3855" started-at="2021-10-25T14:21:25Z" finished-at="2021-10-25T14:21:29Z">
+        <test-method status="PASS" signature="GoToContactUsPage()[pri:0, instance:salesforce_Tests.ContactUsTest@36f6e879]" name="GoToContactUsPage" duration-ms="9191" started-at="2021-10-25T14:24:49Z" finished-at="2021-10-25T14:24:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToContactUsPage -->
